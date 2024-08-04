@@ -13,6 +13,9 @@ using System.Security.Cryptography.X509Certificates;
     var re = linq.Where( x => x.AVG > 94 ).ToList();
     var doo = linq.Select( x => x.Name ).ToList();
     var didi = linq.Sum( x => x.AVG ).ToString();
+
+    Console.ForegroundColor = ConsoleColor.Black;
+    Console.BackgroundColor = ConsoleColor.White;
     
     Console.WriteLine("these are soretd by biggest avg");
 
